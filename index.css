@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.shape {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100px;
+  height: 200px;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='200' viewBox='0 0 100 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 0H100V100H2V24L26 0Z' fill='black' fill-opacity='0.25'/%3E%3Cg filter='url(%23filter0_i_1_32)'%3E%3Cpath d='M23 0H26L2 24V197.99L0 200V119.447V23L23 0Z' fill='%230EB55B' fill-opacity='0.6'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_i_1_32' x='0' y='0' width='26' height='204' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow_1_32'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.inner {
+  width: 98px;
+  height: 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100px;
+  height: 200px;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='200' viewBox='0 0 100 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M74 0H0V100H98V24L74 0Z' fill='black' fill-opacity='0.25'/%3E%3Cg filter='url(%23filter0_i_1_32)'%3E%3Cpath d='M77 0H74L98 24V197.99L100 200V119.447V23L77 0Z' fill='%230EB55B' fill-opacity='0.6'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_i_1_32' x='74' y='0' width='26' height='204' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow_1_32'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.inner2 {
+  width: 98px;
+  height: 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
