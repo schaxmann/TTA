@@ -7,7 +7,7 @@ FROM(
 ) X;
 
 
-SELECT FullTimeFee AS above_ft_fee_average
+SELECT CourseID, FullTimeFee
 FROM fees
 WHERE FullTimeFee > (
 SELECT AVG(FullTimeFee) AS ft_fee_average
