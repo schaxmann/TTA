@@ -1,4 +1,8 @@
+-- SUBQUERIES
+
 USE uni;
+
+-- 1)
 
 SELECT AVG(FullTimeFee) AS ft_fee_average
 FROM(
@@ -6,6 +10,7 @@ FROM(
     FROM fees
 ) X;
 
+-- 2)
 
 SELECT CourseID, FullTimeFee
 FROM fees
@@ -16,6 +21,8 @@ FROM(
     FROM fees
 ) X
 );
+
+-- 3)
 
 SELECT *
 FROM fees
