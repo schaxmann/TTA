@@ -17,7 +17,7 @@ FROM(
 ) X
 );
 
-SELECT FullTimeFee
+SELECT *
 FROM fees
 ORDER BY FullTimeFee;
 
