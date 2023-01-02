@@ -1,0 +1,32 @@
+// MongoDB CL2
+
+use('uni');
+
+// 1
+
+use('uni');
+db.student.find({ CourseID: { $eq: 4} });
+
+// 2
+
+db.student.find({
+    $and : [ 
+        {CourseID: {$eq: 5}},
+        {Forenames: { $eq: 'Joe'}}
+]});
+
+// 3
+
+db.student.find({
+    $or : [ 
+        {CourseID: {$eq: 5}},
+        {Forenames: { $eq: 'Joe'}}
+]});
+
+// 4
+
+db.application.find().sort({studentID: 1})
+
+// 5
+
+db.class.count({LecturerID: {$eq: 11}})

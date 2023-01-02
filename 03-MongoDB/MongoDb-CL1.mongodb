@@ -1,0 +1,67 @@
+// MongoDB CL1
+
+// 1
+
+use('hipHopAccolades');
+
+// 2
+db.createCollection('jayAlbums')
+db.createCollection('yeAlbums')
+db.createCollection('kanoAlbums')
+
+db.jayAlbums.insertMany([
+  { '_id': 1, 'title': 'Reasonable Doubt', 'peakUSChartPosition': 23, 'salesInMillions': 1.5, 'RIAA': 'Platinum', 'BPI': 'Silver'},
+  { '_id': 2, 'title': 'In My Lifetime, Vol. 1', 'peakUSChartPosition': 3, 'salesInMillions': 1.4, 'RIAA': 'Platinum' },
+  { '_id': 3, 'title': 'Vol. 2... Hard Knock Life', 'peakUSChartPosition': 1, 'salesInMillions': 5.4, 'RIAA': '5 x Platinum', 'BPI': 'Silver', 'MC' : 'Platinum'},
+  { '_id': 4, 'title': 'Vol. 3... Life and Times of S. Carter', 'peakUSChartPosition': 1, 'salesInMillions':  3, 'RIAA': 'Platinum', 'BPI': 'Silver'},
+  { '_id': 5, 'title': 'The Dynasty: Roc La Familia', 'peakUSChartPosition': 1, 'salesInMillions': 2.5, 'RIAA': 'Platinum', 'BPI': 'Silver'},
+  { '_id': 6, 'title': 'The Blueprint', 'peakUSChartPosition': 1, 'salesInMillions': 2.7, 'RIAA': '3 x Platinum', 'BPI': 'Silver', 'MC' : 'Gold'},
+  { '_id': 7, 'title': 'The Blueprint 2: The Gift & The Curse', 'peakUSChartPosition': 1, 'RIAA': '2 x Platinum', 'BPI': 'Gold', 'MC' : 'Platinum'},
+  { '_id': 8, 'title': 'The Black Album', 'peakUSChartPosition': 1, 'salesInMillions': 3.5, 'RIAA': 'Platinum', 'BPI': 'Platinum', 'MC' : 'Platinum', 'ARIA': 'Gold', 'SNEP': 'GOLD'},
+  { '_id': 9, 'title': 'The Blueprint 3', 'peakUSChartPosition': 1, 'salesInMillions': 2, 'RIAA': '5 x Platinum', 'BPI': 'Silver', 'MC' : 'Platinum'},
+  { '_id': 10, 'title': '4:44', 'peakUSChartPosition': 1, 'salesInMillions': 0.4, 'RIAA': 'Platinum', 'BPI': 'Silver', }
+]);
+
+db.yeAlbums.insertMany([
+  { '_id': 1, 'title': 'The College Dropout', 'peakUSChartPosition': 2, 'salesInMillions': 3.4, 'RIAA': '4 x Platinum', 'BPI': '3 x Platinum', 'MC' : 'Platinum', 'RMNZ' : 'Platinum'},
+  { '_id': 2, 'title': 'Late Registration', 'peakUSChartPosition': 1, 'salesInMillions': 1.4, 'RIAA': '5 x Platinum', 'BPI': '3 x Platinum', 'MC' : '2 x Platinum', 'RMNZ' : 'Platinum'},
+  { '_id': 3, 'title': 'Graduation', 'peakUSChartPosition': 1, 'salesInMillions': 5.4, 'RIAA': '5 x Platinum', 'BPI': '2 x Platinum', 'MC' : '2 x Platinum', 'RMNZ' : 'Gold'},
+  { '_id': 4, 'title': '808s & Heartbreak', 'peakUSChartPosition': 1, 'salesInMillions': '1.7', 'RIAA': '3 x Platinum', 'BPI': 'Platinum', 'MC' : 'Platinum'},
+  { '_id': 5, 'title': 'My Beautiful Dark Twisted Fantasy', 'peakUSChartPosition': 1, 'salesInMillions': 2.5, 'RIAA': '3 x Platinum', 'BPI': 'Platinum'},
+  { '_id': 6, 'title': 'Yeezus', 'peakUSChartPosition': 1, 'salesInMillions': 2.7, 'RIAA': '2 x Platinum', 'BPI': 'Gold'},
+  { '_id': 7, 'title': 'The Life of Pablo', 'peakUSChartPosition': 1, 'RIAA': '3 x Platinum', 'BPI': 'Gold'},
+  { '_id': 8, 'title': 'Ye', 'peakUSChartPosition': 1, 'salesInMillions': 3.5, 'RIAA': 'Platinum', 'BPI': 'Gold'},
+  { '_id': 9, 'title': 'Jesus Is King', 'peakUSChartPosition': 1, 'salesInMillions': 2, 'RIAA': 'Gold', 'BPI': 'Silver', 'MC' : 'Platinum', 'RMNZ' : 'Platinum'},
+  { '_id': 10, 'title': 'Donda', 'peakUSChartPosition': 1, 'salesInMillions': 0.4, 'RIAA': '3 x Platinum', 'BPI': 'Gold', 'MC' : 'Platinum', 'RMNZ' : 'Platinum' },
+  { '_id': 11, 'title': 'Donda 2', 'peakUSChartPosition': 1, 'salesInMillions': 0.4}
+]);
+
+db.kanoAlbums.insertMany([
+  { '_id': 1, 'title': 'Home Sweet Home', 'peakUKChartPosition': 36, 'BPI': 'Gold'},
+  { '_id': 2, 'title': 'Beats + Bars'},
+  { '_id': 3, 'title': 'Kano Mixtape'},
+  { '_id': 4, 'title': 'London Town', 'peakUKChartPosition': 14, 'BPI': 'Silver'},
+  { '_id': 5, 'title': 'MC No. 1'},
+  { '_id': 6, 'title': '140 Grime Street', 'peakUKChartPosition': 48},
+  { '_id': 7, 'title': 'Jack Bauer: The 7 Day Edition'},
+  { '_id': 8, 'title': 'Method to the Maadness', 'peakUKChartPosition': 45},
+  { '_id': 9, 'title': 'Girls Over Guns'},
+  { '_id': 10, 'title': 'Jack Bauer 2.4'},
+  { '_id': 11, 'title': 'Made in the Manor', 'peakUKChartPosition': 8, 'BPI': 'Gold'},
+  { '_id': 12, 'title': 'Hoodies All Summer', 'peakUKChartPosition': 8}
+]);
+
+// 4
+db.yeAlbums.find({ salesInMillions: { $gte: 3.5} });
+
+// 5
+
+db.jayAlbums.updateMany(
+  {},
+  {$set: { artistName: "Jay-Z"}},
+  { upsert: true }
+)
+
+//6
+
+db.kanoAlbums.drop();
